@@ -33,7 +33,7 @@ namespace Introduction.Controllers
 
 
         [HttpGet]
-        [Route("GetEmployeeListByID/{id:int}")]   // https://localhost:7246/api/EmployeeV3/GetEmployeeListByID/101
+        [Route("GetEmployeeListByID/{id:int}")]   //
 
         public async Task<IActionResult> GetEmployeeListByID(int ID)
         {

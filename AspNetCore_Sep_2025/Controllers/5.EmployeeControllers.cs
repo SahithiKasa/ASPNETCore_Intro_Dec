@@ -44,7 +44,7 @@ namespace Introduction.Controllers
                 employee.EmpName = employeeDTO.Name;
                 employee.EmpSalary = employeeDTO.Salary;
 
-                return Ok($"Employee has updated successfully Now {employee.EmpName} {employee.EmpSalary} {employee.EmpSalary}");
+                return Ok($"Employee has updated successfully Now {employee.EmpName} {employee.EmpSalary} {employee.EmpLocation}");
             }
             else
             {

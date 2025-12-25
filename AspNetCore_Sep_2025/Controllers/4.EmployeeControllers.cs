@@ -33,7 +33,7 @@ namespace Introduction.Controllers
             var result = employeesList.Where(x => x.EmpLocation == empDTO.Location && x.EmpSalary >= empDTO.Salary && x.EmpName == empDTO.Name);
             if (!result.Any())
             {
-                return NotFound($"No employees found with salary and location {empDTO.Location} - {empDTO.Location} ");   // 404 Not found
+                return NotFound($"No employees found with salary and location {empDTO.Salary} - {empDTO.Location} ");   // 404 Not found
             }
             else
             {
@@ -103,7 +103,11 @@ namespace Introduction.Controllers
 
             // Here you would typicalwly add the newEmployee to your data store
             return Ok("Success");
-        }//Why   //200 bad reuat not found 
+        }
+        //Why   //200 bad reuat not found 
+
+
+
     private async Task<List<Employee>> GetEmployees()
         {
             await Task.Delay(2000); // simulating data fetch delay
